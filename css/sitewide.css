@@ -135,7 +135,28 @@ nav .icon {
 }
 
 footer {
-    background-color: #e5e5e5;
-    padding: .5em 0;
-    color: #fff;
+    padding: 1.5em 0;
+    color: var(--white);
+    border: 1px solid var(--primary-800);
+    border-width: 1px 0 0 0;
+}
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  margin: 0;
+  font-size: 12px;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+footer ul li {
+  height: fit-content;
+}
+footer a {
+  color: var(--white);
 }

@@ -33,7 +33,7 @@ body {
     background-color: var(--primary-900);
     color: var(--white);
     line-height: 1.45;
-    font-family: 'HK Grotesk', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
   
   h1,
@@ -41,6 +41,17 @@ body {
   h3,
   h4 {
     color: var(--white);
+  }
+
+  h1 {
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6em;
+    font-family: 'Inter', sans-serif;
   }
 
   p:last-child {
