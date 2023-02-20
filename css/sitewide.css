@@ -1,0 +1,141 @@
+/* || SITEWIDE */
+
+/* Header  */
+
+.header {  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: transform 400ms cubic-bezier(.25,.37,.17,.96); 
+}
+.header {
+  padding: .75em 0;
+  color: var(--white);
+  background-color: var(--primary-900);
+}
+
+/* When header is not in viewport we hide it */
+.header[data-scroll="out"] {
+  transform: translatey(-100%);
+}
+
+/* When moving up and header we show it */
+[data-scroll-dir-y="-1"] .header {
+  transform: translatey(0);
+}
+
+/* display logo and menu on one line */
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: unset;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+}
+
+/* List item height */
+
+.topnav li {
+  height: fit-content;
+}
+
+/* Style the links inside the navigation bar */
+.topnav li a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav li a:hover {
+  color: var(--accent-500);
+}
+
+/* Add an active class to highlight the current page */
+.topnav li a.active {
+  color: var(--accent-500);
+  text-decoration: underline;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+nav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav li {
+    display: none;
+  }
+  nav a.icon {
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnavresponsive {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background: black;
+    gap: 1.5em 0;
+    right: 0;
+    left: 0;
+    top: 63px;
+    min-width: 100vw;
+    padding: 1.5em;
+  }
+  .topnavresponsive li {
+    position: relative;
+  }
+  .topnavresponsive li a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .topnavresponsive li.icon {
+    position: absolute;
+    right: 1.5em;
+    top: 1em;
+  }
+}
+
+/* END header  */
+  
+.logo {
+  max-width: 100px;
+  object-fit: contain;
+}
+
+.container {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
+.main {
+  padding: 7.5em 0 4.5em;
+}
+
+footer {
+    background-color: #e5e5e5;
+    padding: .5em 0;
+    color: #fff;
+}
