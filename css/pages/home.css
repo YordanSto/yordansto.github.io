@@ -1,10 +1,64 @@
 .hero {
     margin: 64px 0 0 0;
     padding: 1.5em 0;
+    height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
 }
-section .content {
+.hero .content {
     background-color: var(--primary-800);
     padding: 1.5em;
     border-radius: 12px;
     border: 1px solid var(--primary-600);
+}
+.hero img {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+}
+.section3 {
+    padding: 1.5em 0;
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+.card-portfolio {
+    background-color: var(--primary-800);
+    padding: 1.5em;
+    border-radius: 12px;
+    border: 1px solid var(--primary-600);
+    height: 500px;
+}
+.brillenkijken {
+    background-image: url(/img/brillenkijken-showcase.png);
+    background-repeat: no-repeat;
+    background-size: 98%;
+    background-position-x: 26px;
+    background-position-y: 130px;
+}
+.portfolio-title {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    backdrop-filter: blur(10px) saturate(200%);
+    -webkit-backdrop-filter: blur(10px) saturate(200%);
+    background-color: rgba(15, 15, 26, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+.portfolio-title h4, .portfolio-title p {
+    margin: 0;
+    width: 100%;   
+}
+.portfolio-title h4 {
+    margin: 0 0 4px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
