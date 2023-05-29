@@ -1,0 +1,84 @@
+/* || GENERAL STYLES */
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url('fonts/HKGrotesk-Regular.ttf');
+    src: url('fonts/HKGrotesk-Regular.ttf') format('ttf'),
+    url('fonts/HKGrotesk-Regular.ttf') format('ttf'),
+    url('fonts/HKGrotesk-Light.ttf') format('ttf'),
+    url('fonts/HKGrotesk-LightItalic.ttf') format('ttf'),
+    url('fonts/HKGrotesk-Medium.ttf') format('ttf'),
+    url('fonts/HKGrotesk-MediumItalic.ttf') format('ttf'),
+    url('fonts/HKGrotesk-SemiBold.ttf') format('ttf'),
+    url('fonts/HKGrotesk-SemiBold.ttf') format('ttf')
+    url('fonts/HKGrotesk-SemiBoldItalic.ttf') format('ttf')
+    url('fonts/HKGrotesk-SemiBold.ttf') format('ttf')
+    url('fonts/HKGrotesk-SemiBold.ttf') format('ttf')
+    url('fonts/HKGrotesk-SemiBold.ttf') format('ttf');
+}
+
+:root {
+  --white: #ffffff;
+  --primary-900: #0F0F1A;
+  --primary-800: #161627;
+  --primary-700: #1D1D34;
+  --primary-600: #252541;
+  --primary-500: #35375a;
+  --secondary-500: #0771fe;
+  --accent-500: #00e59d;
+}
+
+
+body {
+    background-color: var(--primary-900);
+    background-image: url(/img/BG-dots.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--white);
+    line-height: 1.45;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--white);
+  }
+
+  h1 {
+    font-weight: 500;
+  }
+  h2 {
+    font-weight: 400;
+  }
+  h3 {
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6em;
+    font-family: 'Inter', sans-serif;
+  }
+
+  p:last-child {
+    margin-bottom:0;
+  }
+  
+  ul {
+    /* … */
+  }
+  
+  blockquote {
+    
+  }
+
+  a {
+    color: var(--accent-500);
+  }
+  a:hover {
+    color: var(--accent-500);
+  }
