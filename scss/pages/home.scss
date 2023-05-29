@@ -1,7 +1,7 @@
 .hero {
     margin: 64px 0 0 0;
     padding: 1.5em 0;
-    height: calc(100vh - 64px);
+    min-height: calc(100vh - 64px);
     display: flex;
     align-items: center;
     .content-layout {
@@ -101,6 +101,7 @@
             flex-direction: column-reverse;
             .content, img {
                 width: 100%;
+                text-align: center;
             }
         }
     }
