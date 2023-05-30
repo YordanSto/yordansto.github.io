@@ -32,6 +32,12 @@
 .section3 {
     padding: 1.5em 0;
 }
+.services {
+    .content-layout {
+        display: flex;
+        gap: 24px;
+    }
+}
 .projects {
     .content-layout {
         display: flex;
@@ -42,6 +48,7 @@
 }
 
 .portfolio-item {
+    text-decoration: none;
     display: flex;
     gap: 24px;
     &.reversed {
@@ -50,6 +57,11 @@
     .project-showcase {
         width: 65%;
         border-radius: 10px;
+        object-fit: cover;
+        transition: ease-in-out, 500ms;
+        &:hover {
+            transform: scale(1.03);
+            }
     }
 }
 .portfolio-title {
@@ -60,7 +72,11 @@
     justify-content: center;
     padding: 40px;
     .company-logo {
-        max-width: 100px;
+        max-height: 32px;
+        width: fit-content;
+    }
+    .glow-button {
+        margin-top: 24px;
     }
 }
 .portfolio-title h4, .portfolio-title p {
@@ -78,7 +94,7 @@
 
 }
 
-@media (max-width:768px) {
+@media (max-width:991px) {
     .projects {
         .content-layout {
             display: flex;
@@ -93,6 +109,10 @@
             width: 100%;
         }
     }
+}
+
+@media (max-width:768px) {
+
 }
 
 @media (max-width:575px) {
