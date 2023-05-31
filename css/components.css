@@ -133,8 +133,6 @@ body {
     --blur-opacity: .1; }
 
 .card {
-  background-color: var(--background-color);
-  box-shadow: 0px var(--card-box-shadow-1-y) var(--card-box-shadow-1-blur) var(--card-box-shadow-1), 0px var(--card-box-shadow-2-y) var(--card-box-shadow-2-blur) var(--card-box-shadow-2), 0 0 0 1px var(--card-border-color);
   padding: 56px 16px 16px 16px;
   border-radius: 15px;
   cursor: pointer;
@@ -330,7 +328,7 @@ body {
       background-color: var(--card-hover-icon-background-color);
       border-color: var(--card-hover-icon-border-color); }
     .card:hover .icon svg {
-      color: var(--card-hover-icon-color); }
+      color: var(--accent-500); }
     .card:hover .shine {
       opacity: 1;
       transition-duration: .5s;
