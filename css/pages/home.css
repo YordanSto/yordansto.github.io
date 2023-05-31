@@ -62,7 +62,7 @@
   padding: 40px; }
   .portfolio-title .company-logo {
     max-height: 32px;
-    width: fit-content; }
+    width: max-content; }
   .portfolio-title .glow-button {
     margin-top: 24px; }
 
