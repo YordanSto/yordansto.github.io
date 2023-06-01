@@ -133,6 +133,9 @@ body {
     --blur-opacity: .1; }
 
 .card {
+  width: 40%;
+  min-width: 225px;
+  flex-grow: 1;
   padding: 56px 16px 16px 16px;
   border-radius: 15px;
   cursor: pointer;
