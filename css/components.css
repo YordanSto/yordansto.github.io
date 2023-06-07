@@ -354,3 +354,15 @@ body {
         transition-delay: .15s; }
       .card:hover .background .line.line-3:before, .card:hover .background .line.line-3:after {
         transition-delay: .3s; }
+
+.image-box {
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 26px;
+  box-shadow: 0 2rem 5rem -1rem #001024, inset 0 1px rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(4px); }
+  .image-box img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    border-radius: 10px; }

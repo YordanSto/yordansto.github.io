@@ -3,8 +3,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: calc(80vh - 64px);
-  position: relative; }
+  position: relative;
+  margin-bottom: -75px; }
   .portfolio-header::after {
     content: '';
     background: linear-gradient(0deg, #0f0f1a 0%, rgba(255, 255, 255, 0) 100%);
@@ -15,23 +15,16 @@
     bottom: 0; }
   .portfolio-header .content-layout {
     text-align: center;
-    padding: 8rem;
+    padding: 15rem 8rem;
     position: relative;
     z-index: 1; }
     .portfolio-header .content-layout .company-logo {
-      max-width: 200px; }
-  .portfolio-header .image-box {
-    position: absolute;
-    z-index: 1;
-    margin-top: -80px;
-    left: 20%;
-    right: 20%; }
+      max-width: 150px;
+      margin-bottom: 24px; }
 
-@media (max-width: 1024px) {
-  .portfolio-header .image-box {
-    left: 10%;
-    right: 10%; } }
+.portfolio-content .container {
+  max-width: 800px; }
 
 @media (max-width: 768px) {
   .portfolio-header .content-layout {
-    padding: 8rem 0rem; } }
+    padding: 10rem 0rem; } }
