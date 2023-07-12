@@ -24,6 +24,21 @@
 
 .portfolio-content .container {
   max-width: 800px; }
+  .portfolio-content .container .content-layout {
+    padding-top: 40px; }
+    .portfolio-content .container .content-layout .project-screens {
+      display: flex;
+      padding-top: 24px;
+      gap: 24px;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .portfolio-content .container .content-layout .project-screens .image-box {
+        max-width: 220px; }
+      .portfolio-content .container .content-layout .project-screens .caption {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        margin: 0; }
 
 @media (max-width: 768px) {
   .portfolio-header .content-layout {

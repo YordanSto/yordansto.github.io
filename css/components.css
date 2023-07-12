@@ -366,3 +366,6 @@ body {
     max-width: 100%;
     display: block;
     border-radius: 10px; }
+  .image-box.s {
+    padding: 8px;
+    border-radius: 18px; }
