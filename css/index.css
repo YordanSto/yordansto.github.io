@@ -1,6 +1,6 @@
-@import url("/scss/base.scss");
-@import url("/scss/components.scss");
-@import url("/scss/reset.scss");
-@import url("/scss/sitewide.scss");
-@import url("/scss/pages/home.scss");
-@import url("/scss/pages/portfolio-single.scss");
+@import url("/css/base.css");
+@import url("/css/components.css");
+@import url("/css/reset.css");
+@import url("/css/sitewide.css");
+@import url("/css/pages/home.css");
+@import url("/css/pages/portfolio-single.css");
