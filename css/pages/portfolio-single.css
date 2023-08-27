@@ -22,6 +22,9 @@
       max-width: 150px;
       margin-bottom: 24px; }
 
+.portfolio-header-img {
+  position: relative; }
+
 .portfolio-content .container {
   max-width: 800px; }
   .portfolio-content .container .content-layout {
@@ -38,7 +41,8 @@
         font-size: 12px;
         width: 100%;
         text-align: center;
-        margin: 0; }
+        margin: 0;
+        z-index: 0; }
 
 @media (max-width: 768px) {
   .portfolio-header .content-layout {
