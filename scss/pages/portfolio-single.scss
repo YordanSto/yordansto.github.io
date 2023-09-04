@@ -24,6 +24,12 @@
             margin-bottom: 24px;
         }
     }
+    &.brillenkijken {
+        background: url('/img/brillenkijken-bg.png');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 }
 .portfolio-header-img {
     position: relative;

@@ -21,6 +21,11 @@
     .portfolio-header .content-layout .company-logo {
       max-width: 150px;
       margin-bottom: 24px; }
+  .portfolio-header.brillenkijken {
+    background: url("/img/brillenkijken-bg.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; }
 
 .portfolio-header-img {
   position: relative; }
