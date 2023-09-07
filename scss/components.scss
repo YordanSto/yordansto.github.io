@@ -1,13 +1,21 @@
 // Glow button
 
 .glow-button {
-  --button-background: #09041e;
+  // --button-background: #09041e;
+  // --button-color: #fff;
+  // --button-shadow: rgba(33, 4, 104, 0.2);
+  // --button-shine-left: rgba(120, 0, 245, 0.5);
+  // --button-shine-right: rgba(200, 148, 255, 0.65);
+  // --button-glow-start: #B000E8;
+  // --button-glow-end: #009FFD;
+
+  --button-background: var(--primary-700);
   --button-color: #fff;
   --button-shadow: rgba(33, 4, 104, 0.2);
-  --button-shine-left: rgba(120, 0, 245, 0.5);
-  --button-shine-right: rgba(200, 148, 255, 0.65);
-  --button-glow-start: #B000E8;
-  --button-glow-end: #009FFD;
+  --button-shine-left: rgba(1, 97, 223, 0.5);
+  --button-shine-right: rgba(131, 184, 255, 0.65);
+  --button-glow-start: #0771fe;
+  --button-glow-end: #00e59d;
 
   appearance: none;
   outline: none;
@@ -50,6 +58,7 @@
 
   span {
     z-index: 1;
+    text-align: center;
     position: relative;
     display: block;
     padding: 10px 0;
@@ -74,10 +83,12 @@
       filter: blur(20px);
     }
   }
+  
 
   &:hover {
     --button-glow-opacity: 1;
     --button-glow-duration: .25s;
+    color: inherit;
   }
 }
 
