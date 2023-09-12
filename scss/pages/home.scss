@@ -7,8 +7,7 @@
     .content-layout {
         display: grid;
         gap: 20px;
-        grid-template-columns: 25% auto 35%;
-        // grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 28% 1fr 1fr;
         div {
             width: 100%;
         }
@@ -54,6 +53,9 @@
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: span 3;
+            border: 1px solid rgb(51, 54, 57);
+            border-radius: 12px;
+            overflow: auto;
             .twitter-timeline.twitter-timeline-rendered {
                 height: 100%!important;
                 iframe {
@@ -70,7 +72,10 @@
             grid-row-start: 4;
             grid-row-end: span 1;
             img {
-                object-fit: contain;
+                object-fit: cover;
+                object-position: left;
+                -webkit-box-shadow: inset 0px 0px 0px 2px #22262D; 
+                box-shadow: 0px 0px 0px 1px #22262D;
             }
         }
     }
@@ -160,11 +165,86 @@
 }
 
 @media (max-width:768px) {
+    .hero {
+        .content-layout {
+            grid-template-columns: 1fr 1fr 1fr;
+            img {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 1;
+                grid-row-end: span 1;
+            }
+            .content {
+                grid-column-start: 2;
+                grid-column-end: span 2;
+                grid-row-start: 1;
+                grid-row-end: span 1;
+            }
+            .ui {
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end: span 2;
+            }
+            .front-end {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row-start: 4;
+                grid-row-end: span 2;
+            }
+            .blog {
+                grid-column-start: 2;
+                grid-column-end: span 2;
+                grid-row-start: 2;
+                grid-row-end: span 3;
+            }
+            .roadmap {
+                grid-column-start: 2;
+                grid-column-end: span 2;
+                grid-row-start: 5;
+                grid-row-end: span 1;
+            }
+        }
+    }
+}
 
+@media (max-width:600px) {
+    .hero {
+        .content-layout {
+            display: flex;
+            flex-wrap: wrap;
+            img {
+                width: 40%;
+                flex-grow: 1;
+                height: auto;
+            }
+            .content {
+                width: 40%;
+                flex-grow: 1;
+                h1 {
+                    font-size: 1.3em;
+                }
+                h3 {
+                    font-size: 0.9em;
+                }
+            }
+            .ui, .front-end, .blog, .roadmap {
+                width: 100%;
+            }
+            .blog {
+                height: 400px;
+            }
+            .roadmap {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:575px) {
-    
+
 }
 
 @media (max-width:425px) {
@@ -172,6 +252,18 @@
         flex-wrap: wrap;
         .portfolio-title {
             padding: 16px;
+        }
+    }
+    .hero {
+        .content-layout {
+            > img {
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+            .content {
+                width: 100%;
+                order: -1;
+            }
         }
     }
 }
