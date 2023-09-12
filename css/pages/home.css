@@ -48,10 +48,12 @@
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: span 3; }
-      .hero .content-layout .blog iframe {
+      .hero .content-layout .blog .twitter-timeline.twitter-timeline-rendered {
         height: 100% !important; }
-        .hero .content-layout .blog iframe .css-1dbjc4n .r-kemksi .r-1roi411 .r-1q9bdsx .r-rs99b7 .r-1udh08x {
-          max-height: 100% !important; }
+        .hero .content-layout .blog .twitter-timeline.twitter-timeline-rendered iframe {
+          height: 100% !important; }
+          .hero .content-layout .blog .twitter-timeline.twitter-timeline-rendered iframe .css-1dbjc4n.r-kemksi.r-1roi411.r-1q9bdsx.r-rs99b7.r-1udh08x {
+            max-height: 100% !important; }
     .hero .content-layout .roadmap {
       grid-column-start: 3;
       grid-column-end: 3;
