@@ -102,7 +102,7 @@ body {
   --background-color: #18181B;
   --text-color: #A1A1AA;
 
-  --card-background-color: rgba(255, 255, 255, .015);
+  --card-background-color: var(--primary-800);
   --card-border-color: rgba(255, 255, 255, 0.1);
   --card-box-shadow-1: rgba(0, 0, 0, 0.05);
   --card-box-shadow-1-y: 3px;
