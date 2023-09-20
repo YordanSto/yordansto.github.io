@@ -543,3 +543,12 @@ body {
     border-radius: 18px;
   }
 }
+.btn-primary {
+  background-color: var(--secondary-500);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  box-shadow: inset 0px 0px 0px -2px ;
+  border-radius: 6px;
+  cursor: pointer;
+}

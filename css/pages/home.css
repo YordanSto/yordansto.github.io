@@ -42,20 +42,38 @@
       grid-column-end: 2;
       grid-row-start: 3;
       grid-row-end: span 2; }
-    .hero .content-layout .blog {
+    .hero .content-layout .form {
       grid-column-start: 3;
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: span 3;
-      border: 1px solid #333639;
+      background-color: var(--primary-800);
       border-radius: 12px;
-      overflow: auto; }
-      .hero .content-layout .blog .twitter-timeline.twitter-timeline-rendered {
-        height: 100% !important; }
-        .hero .content-layout .blog .twitter-timeline.twitter-timeline-rendered iframe {
-          height: 100% !important; }
-          .hero .content-layout .blog .twitter-timeline.twitter-timeline-rendered iframe .css-1dbjc4n.r-kemksi.r-1roi411.r-1q9bdsx.r-rs99b7.r-1udh08x {
-            max-height: 100% !important; }
+      padding: 24px;
+      overflow: auto;
+      /* Style inputs with type="text", select elements and textareas */
+      /* Style the submit button with a specific background color etc */
+      /* When moving the mouse over the submit button, add a darker green color */
+      /* Add a background color and some padding around the form */ }
+      .hero .content-layout .form input[type=text], .hero .content-layout .form input[type=email], .hero .content-layout .form textarea {
+        background-color: var(--primary-900);
+        width: 100%;
+        /* Full width */
+        padding: 8px;
+        /* Some padding */
+        border: 1px solid var(--primary-600);
+        /* Gray border */
+        border-radius: 6px;
+        /* Rounded borders */
+        box-sizing: border-box;
+        /* Make sure that padding and width stays in place */
+        margin-bottom: 16px;
+        /* Bottom margin */
+        resize: vertical; }
+      .hero .content-layout .form input[type=submit] {
+        width: 100%; }
+      .hero .content-layout .form input[type=submit]:hover {
+        background-color: #45a049; }
     .hero .content-layout .roadmap {
       grid-column-start: 3;
       grid-column-end: 3;
@@ -152,7 +170,7 @@
       grid-column-end: 2;
       grid-row-start: 4;
       grid-row-end: span 2; }
-    .hero .content-layout .blog {
+    .hero .content-layout .form {
       grid-column-start: 2;
       grid-column-end: span 2;
       grid-row-start: 2;
@@ -178,9 +196,9 @@
         font-size: 1.3em; }
       .hero .content-layout .content h3 {
         font-size: 0.9em; }
-    .hero .content-layout .ui, .hero .content-layout .front-end, .hero .content-layout .blog, .hero .content-layout .roadmap {
+    .hero .content-layout .ui, .hero .content-layout .front-end, .hero .content-layout .form, .hero .content-layout .roadmap {
       width: 100%; }
-    .hero .content-layout .blog {
+    .hero .content-layout .form {
       height: 400px; }
     .hero .content-layout .roadmap img {
       width: 100%; } }

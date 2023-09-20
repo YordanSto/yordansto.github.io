@@ -47,23 +47,36 @@
             grid-row-start: 3;
             grid-row-end: span 2;
         }
-        .blog {
+        .form {
             grid-column-start: 3;
             grid-column-end: 3;
             grid-row-start: 1;
             grid-row-end: span 3;
-            border: 1px solid rgb(51, 54, 57);
+            background-color: var(--primary-800);
             border-radius: 12px;
+            padding: 24px;
             overflow: auto;
-            .twitter-timeline.twitter-timeline-rendered {
-                height: 100%!important;
-                iframe {
-                    height: 100%!important;
-                    .css-1dbjc4n.r-kemksi.r-1roi411.r-1q9bdsx.r-rs99b7.r-1udh08x {
-                        max-height: 100%!important;
-                    }
-                }
+
+            /* Style inputs with type="text", select elements and textareas */
+            input[type=text], input[type=email], textarea {
+                background-color: var(--primary-900);
+                width: 100%; /* Full width */
+                padding: 8px; /* Some padding */ 
+                border: 1px solid var(--primary-600); /* Gray border */
+                border-radius: 6px; /* Rounded borders */
+                box-sizing: border-box; /* Make sure that padding and width stays in place */
+                margin-bottom: 16px; /* Bottom margin */
+                resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
             }
+            /* Style the submit button with a specific background color etc */
+            input[type=submit] {
+                width: 100%;
+            }
+            /* When moving the mouse over the submit button, add a darker green color */
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            /* Add a background color and some padding around the form */
         }
         .roadmap {
             grid-column-start: 3;
@@ -191,7 +204,7 @@
                 grid-row-start: 4;
                 grid-row-end: span 2;
             }
-            .blog {
+            .form {
                 grid-column-start: 2;
                 grid-column-end: span 2;
                 grid-row-start: 2;
@@ -227,10 +240,10 @@
                     font-size: 0.9em;
                 }
             }
-            .ui, .front-end, .blog, .roadmap {
+            .ui, .front-end, .form, .roadmap {
                 width: 100%;
             }
-            .blog {
+            .form {
                 height: 400px;
             }
             .roadmap {
