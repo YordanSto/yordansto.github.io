@@ -59,6 +59,7 @@
 
             /* Style inputs with type="text", select elements and textareas */
             input[type=text], input[type=email], textarea {
+                color: white;
                 background-color: var(--primary-900);
                 width: 100%; /* Full width */
                 padding: 8px; /* Some padding */ 

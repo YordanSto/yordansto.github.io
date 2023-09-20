@@ -56,6 +56,7 @@
       /* When moving the mouse over the submit button, add a darker green color */
       /* Add a background color and some padding around the form */ }
       .hero .content-layout .form input[type=text], .hero .content-layout .form input[type=email], .hero .content-layout .form textarea {
+        color: white;
         background-color: var(--primary-900);
         width: 100%;
         /* Full width */

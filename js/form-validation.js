@@ -18,7 +18,7 @@ function isValidEmail(email) {
   // Function to validate the contact form
 function validateContactForm(contactForm) {
     // Get the values entered in the form fields
-    const name = contactForm["name"].value;
+    const name = contactForm["fname"].value;
     const email = contactForm["email"].value;
     const message = contactForm["message"].value;
   
