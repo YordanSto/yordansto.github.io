@@ -23,6 +23,8 @@
             }
         }
     }
+?>
+<?php
     $recaptcha_secret = "6LcWtDwoAAAAAHe-kv80X4youyvIq6nRrfqbkQIM";
     $recaptcha_response = $_POST["g-recaptcha-response"];
 
