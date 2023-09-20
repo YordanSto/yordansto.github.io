@@ -203,8 +203,6 @@
         font-size: 0.9em; }
     .hero .content-layout .ui, .hero .content-layout .front-end, .hero .content-layout .form, .hero .content-layout .roadmap {
       width: 100%; }
-    .hero .content-layout .form {
-      height: 400px; }
     .hero .content-layout .roadmap img {
       width: 100%; } }
 
