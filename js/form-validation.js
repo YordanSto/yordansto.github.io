@@ -2,7 +2,7 @@ document.getElementById("contact-form").addEventListener("submit", (event) => {
     const contactForm = event.target
     if (!validateContactForm(contactForm)) {
       event.preventDefault();
-      displayError(contactForm, 'Please provide all details.')
+      displayError(contactForm, 'I need all info, please 😄.')
     }
   });
 

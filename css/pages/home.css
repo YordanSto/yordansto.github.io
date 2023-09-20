@@ -32,6 +32,8 @@
       display: flex;
       flex-direction: column;
       justify-content: center; }
+      .hero .content-layout .content h3 {
+        font-weight: 300; }
     .hero .content-layout .ui {
       grid-column-start: 2;
       grid-column-end: 2;
@@ -52,9 +54,7 @@
       padding: 24px;
       overflow: auto;
       /* Style inputs with type="text", select elements and textareas */
-      /* Style the submit button with a specific background color etc */
-      /* When moving the mouse over the submit button, add a darker green color */
-      /* Add a background color and some padding around the form */ }
+      /* Style the submit button with a specific background color etc */ }
       .hero .content-layout .form input[type=text], .hero .content-layout .form input[type=email], .hero .content-layout .form textarea {
         color: white;
         background-color: var(--primary-900);
@@ -73,8 +73,12 @@
         resize: vertical; }
       .hero .content-layout .form input[type=submit] {
         width: 100%; }
-      .hero .content-layout .form input[type=submit]:hover {
-        background-color: #45a049; }
+      .hero .content-layout .form .form-error {
+        padding: 8px 10px;
+        border-radius: 6px;
+        border: 1px solid #331F00;
+        background: #1A0F00;
+        margin-bottom: 12px; }
     .hero .content-layout .roadmap {
       grid-column-start: 3;
       grid-column-end: 3;
@@ -150,7 +154,7 @@
 
 @media (max-width: 768px) {
   .hero .content-layout {
-    grid-template-columns: 1fr 1fr 1fr; }
+    grid-template-columns: 1fr 1fr 1fr 1fr; }
     .hero .content-layout img {
       grid-column-start: 1;
       grid-column-end: 2;
@@ -158,28 +162,28 @@
       grid-row-end: span 1; }
     .hero .content-layout .content {
       grid-column-start: 2;
-      grid-column-end: span 2;
+      grid-column-end: span 3;
       grid-row-start: 1;
       grid-row-end: span 1; }
     .hero .content-layout .ui {
       grid-column-start: 1;
-      grid-column-end: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: span 2; }
+    .hero .content-layout .form {
+      grid-column-start: 3;
+      grid-column-end: span 2;
       grid-row-start: 2;
       grid-row-end: span 2; }
     .hero .content-layout .front-end {
       grid-column-start: 1;
-      grid-column-end: 2;
+      grid-column-end: span 2;
       grid-row-start: 4;
       grid-row-end: span 2; }
-    .hero .content-layout .form {
-      grid-column-start: 2;
-      grid-column-end: span 2;
-      grid-row-start: 2;
-      grid-row-end: span 3; }
     .hero .content-layout .roadmap {
-      grid-column-start: 2;
+      grid-column-start: 3;
       grid-column-end: span 2;
-      grid-row-start: 5;
+      grid-row-start: 4;
       grid-row-end: span 1; } }
 
 @media (max-width: 600px) {
